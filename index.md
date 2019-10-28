@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+## Professional Self-Assessment
 
-You can use the [editor on GitHub](https://github.com/jayscscap/jayscscap.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+While I would say that I have really only been coding for the past few years, my real introduction was as a teenager building basic websites. I spent hours changing HTML and CSS to make what I considered to be beautiful websites that celebrated the things that I thought were important as a teenager - my favorite music, my hobbies, and so on. When I took a free online Javascript class five years ago, the same joy returned as I spent hours working on the classes and revisiting completed projects to make them even better. After that I started using my free time to learn other languages like Java, Python, SQL, C#. I made a decision two years ago to return to school to get a more formal education and make coding into a career, so I entered SNHU and joined the Computer Science program.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Even from the beginning, it was pretty clear just how vast the program actually was and that I'd only learned the smallest pieces of information from my self-study. Additionally, I had no prior knowledge of anything to do with formal reviews or collaboration or project management. APIs and data structures were completely new to me and even what I was learning about those was just the tip of the iceberg.
 
-### Markdown
+Here at the end of the program, looking at my old projects as I worked on my ePortfolio has been nostalgic and has helped me realize just how far I've come. I learned about Agile and Waterfall methodologies and practiced team collaboration by taking on the role of a tester with my classmates taking the roles of developer, project owner, and scrum master. This helped me learn about the roles that a team member can take on and how each person has an important role to play. We also worked on a lot of collaborative activities in discussions and learned about giving constructive feedback and working as a team, which is beneficial since many of the things I will work on will be collaborative. We also covered working with stakeholders and clients and how to work collaboratively with them to make the project a success by their standards. One of the most important things I learned there was how to communicate potential risks and set-backs; I learned about how important it is to go into a project with risk mitigation strategies and communicate problems and solutions with stakeholders to help them understand where the project is, why there was a setback, and what can be done moving forward. The main benefit to my career that I picked up from this is that I learned how to work with figures who will be vital to the completion of any project I work on. Because they are so important, transparency is key and it's incredibly useful to have a guideline on how to communicate with stakeholders. In data sctructures, I learned a lot about how to cycle through data using pointers and about how to create structures like vectors and binary trees. In IT courses we also learned about the data structures in operating systems like hash tables that make it easier for the computer to interpret data. This  In software engineering and design classes, I learned additional languages and how each language could be applied. As specific examples, we learned about creating 2D, 3D and interactive models using OpenGL, developing interactive programs that accepted user interaction, and creating APIs using MongoDB with Python and Java. APIs in particular are beneficial to data management and analysis since it allows me to connect data to an external visualization software and create meaningful analyses for team members and stakeholders. And finally, learning about securing data is one of the most important things I studied, particularly since data breaches are so common in modern news. With what I've learned, I can keep security as a top consideration for any work I do.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I selected the artifacts specifically to focus on what I'd noticed in my work as being important pieces of databases. My software design artifact focused on building a functioning program in Python that is both easy to read and catches errors. For the data structures artifact, developed alongside the software design artifact, I tried to think about the different data structures that could be used and selected the best fit for my end goal. For the databases aspect, I tried to focus on what database functions were the most useful for anyone trying to keep data clean. While all three artifacts show my specialization on databases, they also show that I can complete concepts that are applicable in software development. Additionally, most of the concepts covered were either not covered in my classes or were covered in a different programming language, so they demonstrate that I am able to work between languages and that I am able to get the resources I need to learn to do something new.
 
-```markdown
-Syntax highlighted code block
+Even though I'm at the end of the program, I know that there's a lot left to learn and I'm fortunate enough that I can currently apply the concepts I've learned from my classes at my job and try to figure out ways to expand on what I know. However, I'm also looking forward to being able to go farther with more self-study in my free time and possibly taking more formal classes in the future.
 
-# Header 1
-## Header 2
-### Header 3
+##Code Review
+Prior to completing this project, I completed a code review of the artifacts that I was using as my starting points. Both projects had been submitted in previous classes and received reviews from instructors, however I completed this review of my own with the new information I've obtained from my classes and on what functions were limited or could be improved.
 
-- Bulleted
-- List
+The code review can be viewed at the following link:
+[link](https://youtu.be/4Eh3gSYjs64)
 
-1. Numbered
-2. List
+##Software Engineering and Design / Data Structures
 
-**Bold** and _Italic_ and `Code` text
+[link](https://github.com/jayscscap/jayscscap.github.io/blob/master/VZ_CapstoneProjectArtifact)
 
-[Link](url) and ![Image](src)
-```
+This program was from a class I took about a year and a half ago and was developed in Java. The project created a system where zookeepers could track the health, diets, and cleanliness of animals and their exhibits. I selected this artifact since it resembles a basic database. My goal was to convert the program into Python, a language I have worked in the most while at SNHU. Initially I had planned to create a user interface but for the purposes of getting everything done before the end of the course I dialed it back to a language conversion.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+While I was working on the software engineering and design aspect of this project, I ran into a few problems. Functions behave differently in different languages and I was surprised to learn just how different switch statements were. For my initial submission I went with an if/else statement for the whole project, and I considered trying to change them to switch statements. While switch statements aren't necessarily standard in Python, I did have the coding figured out for how to implement one that would have been faster on the back-end, I ran into problems with the data structure side of things because I wanted to be able to add new cases. I ended up sticking with if/else statements because I wanted to think about the database getting larger with more entries, so I stuck with my original choice.
 
-### Jekyll Themes
+With my first submission for the Data Structures assignment, I'd gone with a binary tree to store the IDs of each entry. The implementation of a binary tree was easy enough but I had trouble figuring out how to return an object using its ID. Ultimately I decided to instead go with something much simpler; a list. I went with the more complex data structure initially because I had hoped to implement something that would help processing times as values were added to the system, but I really think that here the simpler choice is better for helping me meet my goals in the most straightforward way possible.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jayscscap/jayscscap.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+With both parts of the development of this artifact, there may be more for me to learn about the things I ultimately didn't go with so that a faster system can be implemented. But as I'm learning more and more, it's okay to start small and make improvements over time. The final product works as it should and meets the basic goals I had set out to achieve. Since I was also focused on adding new animals and habitats to the system, I did decide to go with nested lists so that I could add all the details of each animal and habitat added to the system as new and individual entries. Since lists are ordered, it meant I could iterate through them in the same order each time to print error messages and view animal and habitat details.
 
-### Support or Contact
+##Databases
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[link](https://github.com/jayscscap/jayscscap.github.io/blob/master/Messaging_CapstoneProject.sql)
+
+This artifact is from a class where we developed a mySQL database that acted as the background for an instant messaging application. This was one of the first classes I took while I was attending SNHU, so it was created about two years ago. Since then, I've learned more about databsaes and what they can do and decided that I wanted to add a function that reflected one of the most important functions I've seen in a database; merging. Data health is important for a functioning and healthy database, and I wanted to create a program that could merge duplicate entries. I selected this to display that I could work with more complex mySQL functions and maintain a healthy database.
+
+While working on this function, I learned more about mySQL and SQL. SQL does have a native merge function that makes maintaining duplicates a little easier. While mySQL doesn't have that function, it does have other functions that behave in the same way. The main problem I had was figuring out how to make the function applicable to this program; the basic pseudocode for this is that if there is a duplicate key detected, the row containing the original key gets updated. While I can personally see the application for a database that is updated by those in data entry, since this is a database containing values input by an end user the update function was a little more difficult to apply. In the end, I decided to update a username based on the entry of a duplicate email address.
