@@ -10,13 +10,13 @@ I selected the artifacts specifically to focus on what I'd noticed in my work as
 
 Even though I'm at the end of the program, I know that there's a lot left to learn and I'm fortunate enough that I can currently apply the concepts I've learned from my classes at my job and try to figure out ways to expand on what I know. However, I'm also looking forward to being able to go farther with more self-study in my free time and possibly taking more formal classes in the future.
 
-##Code Review
+## Code Review
 Prior to completing this project, I completed a code review of the artifacts that I was using as my starting points. Both projects had been submitted in previous classes and received reviews from instructors, however I completed this review of my own with the new information I've obtained from my classes and on what functions were limited or could be improved.
 
 The code review can be viewed at the following link:
 [link](https://youtu.be/4Eh3gSYjs64)
 
-##Software Engineering and Design / Data Structures
+## Software Engineering and Design / Data Structures
 
 [link](https://github.com/jayscscap/jayscscap.github.io/blob/master/VZ_CapstoneProjectArtifact)
 
@@ -28,7 +28,7 @@ With my first submission for the Data Structures assignment, I'd gone with a bin
 
 With both parts of the development of this artifact, there may be more for me to learn about the things I ultimately didn't go with so that a faster system can be implemented. But as I'm learning more and more, it's okay to start small and make improvements over time. The final product works as it should and meets the basic goals I had set out to achieve. Since I was also focused on adding new animals and habitats to the system, I did decide to go with nested lists so that I could add all the details of each animal and habitat added to the system as new and individual entries. Since lists are ordered, it meant I could iterate through them in the same order each time to print error messages and view animal and habitat details.
 
-##Databases
+## Databases
 
 [link](https://github.com/jayscscap/jayscscap.github.io/blob/master/Messaging_CapstoneProject.sql)
 
