@@ -1,0 +1,129 @@
+##author Alex
+##Capstone Project - Software Engineering and Design / Data Structures
+##Final Artifact
+
+from collections import OrderedDict
+
+##initialize lists for animals and habitats
+animals = []
+habitats = []
+
+##create classes for animals and animals
+
+class VZ_Animals:
+    def __init__(self, animtype, animname, animage, animhealth, animdiet):
+        self.animtype = animtype
+        self.animname = animname
+        self.animage = animage
+        self.animhealth = animhealth
+        self.animdiet = animdiet
+
+
+class VZ_Habitats:
+    def __init__(self, habname, habtemp, habfood, habclean):
+        self.habname = habname
+        self.habtemp = habtemp
+        self.habfood = habfood
+        self.habclean = habclean
+
+
+# create animals and define type, name, age, health status and feeding schedule and insert each into nested list
+lion = VZ_Animals('Lion', 'Leo', '5', '*****Cut on left front paw',
+                  'Twice daily')
+animals.append([
+    lion.animtype, lion.animname, lion.animage, lion.animhealth, lion.animdiet
+])
+tiger = VZ_Animals('Tiger', 'Maj', '15', 'None', '3x daily')
+animals.append([
+    tiger.animtype, tiger.animname, tiger.animage, tiger.animhealth,
+    tiger.animdiet
+])
+bear = VZ_Animals('Bear', 'Baloo', '1', 'None', '*****None on record')
+animals.append([
+    bear.animtype, bear.animname, bear.animage, bear.animhealth, bear.animdiet
+])
+giraffe = VZ_Animals('Giraffe', 'Spots', '12', 'None', 'Grazing')
+animals.append([
+    giraffe.animtype, giraffe.animname, giraffe.animage, giraffe.animhealth,
+    giraffe.animdiet
+])
+
+# create habitats and define habitat names, temperatures, food status, and cleanliness
+penguin = VZ_Habitats('Penguin', 'Freezing', '*****Fish in water running low',
+                      'Passed')
+habitats.append(
+    [penguin.habname, penguin.habtemp, penguin.habfood, penguin.habclean])
+bird = VZ_Habitats('Bird', 'Moderate', 'Natural from environment', 'Passed')
+habitats.append([bird.habname, bird.habtemp, bird.habfood, bird.habclean])
+aquarium = VZ_Habitats('Aquarium', 'Varies with output temperature',
+                       'Added daily', '*****Needs cleaning from algae')
+habitats.append(
+    [aquarium.habname, aquarium.habtemp, aquarium.habfood, aquarium.habclean])
+
+#welcome and animal/habitat problems
+print('Welcome to the Virtual Zookeeper System\n')
+for i in range(len(animals)):
+    if '*****' in animals[i][3]:
+        print('Out of normal range: ' + animals[i][0] + ' Health - ' +
+              animals[i][3])
+    if '*****' in animals[i][4]:
+        print('Out of normal range: ' + animals[i][0] + ' Diet - ' +
+              animals[i][4])
+for i in range(len(habitats)):
+    if '*****' in habitats[i][2]:
+        print('Out of normal range: ' + animals[i][0] + ' Food - ' +
+              animals[i][2])
+    if '*****' in habitats[i][3]:
+        print('Out of normal range: ' + animals[i][0] + ' Cleanliness - ' +
+              animals[i][3])
+
+# print main menu
+menuselect = '\nSelect an option:\n'
+mainmenu = (input('Animals\n' 'Habitats\n' 'Add\n' 'Exit\n'))
+while mainmenu.title() != 'Exit':
+  if mainmenu.title() in 'Animals':
+    print('\nPlease type an animal type to view details.\n')
+    for i in range(len(animals)):
+      print(animals[i][0])
+    print('Exit\n')
+    animmenu = (input())
+    for i in range(len(animals)):
+      if animmenu.title() in animals[i][0]:
+        print('\nAnimal Type: ' + animals[i][0] + '\nAnimal Temperature: ' + animals[i][1] + '\nAnimal Food: ' + animals[i][2] + '\nAnimal Cleanliness: ' + animals[i][3] + '\nAnimal Diet: ' + animals[i][4])
+        break
+    break
+  elif mainmenu.title() in 'Habitats':
+    print('\nPlease type a habitat name to view details.\n')
+    for i in range(len(habitats)):
+      print(habitats[i][0])
+    habmenu = (input())
+    for i in range(len(habitats)):
+      if habmenu.title() in habitats[i][0]:
+        print('\nHabitat Name: ' + habitats[i][0] + '\nHabitat Temperature: ' + habitats[i][1] + '\nHabitat Food: ' + habitats[i][2] + '\nHabitat Cleanliness: ' + habitats[i][3])
+        break
+    break
+  elif mainmenu.title() in 'Add':
+    print('\nWould you like to add an animal or a habitat?\n')
+    addmenu = (input("\nAnimal\nHabitat\n"))
+    if addmenu.title() in 'Animals':
+      atype = (input('\nEnter the animal\'s type:\n'))
+      name = (input('\nEnter the animal\'s name:\n'))
+      age = (input('\nEnter the animal\'s age:\n'))
+      health = (input('\nEnter the animal\'s health status:\n'))
+      diet = (input('\nEnter the animal\'s diet:\n'))
+
+      newAnimal = VZ_Animals(atype, name, age, health, diet)
+      animals.append([newAnimal.animtype, newAnimal.animname, newAnimal.animage, newAnimal.animhealth, newAnimal.animdiet])
+      break
+    elif addmenu.title() in 'Habitats':
+      name = (input('\nEnter the habitat\'s name:\n'))
+      temp = (input('\nEnter the habitat\'s temperature:\n'))
+      food = (input('\nEnter the habitat\'s food status:\n'))
+      clean = (input('\nEnter the habitat\'s cleanliness status:\n'))
+
+      newHabitat = VZ_Habitats(name, temp, food, clean)
+      habitats.append([newHabitat.habname, newHabitat.habtemp, newHabitat.habfood, newHabitat.habclean])
+      break
+    else:
+      break
+      
